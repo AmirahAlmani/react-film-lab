@@ -6,11 +6,14 @@ export default class FilmListing extends React.Component {
 
         const allItems = TMDB.films.map((film, index) =>
             <div className="test1">{film.title}</div>
+
+            // <div className="test1">{film.release_date}</div>
+
         );
         return (
             <div className="film-list">
                 <h1 className="section-title">FILMS</h1>
-                <div>{allItems}</div>
+                <p>{allItems}</p>
             </div>
 
 
